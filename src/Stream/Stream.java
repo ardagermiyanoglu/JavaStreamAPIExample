@@ -12,5 +12,7 @@ public class Stream {
 
 		List<Developer> java = developers.stream().filter(developer -> developer.languages().contains("Java")).toList();
 		System.out.println(java);
+		
+		developers.stream().forEach(Developer::talk);
 	}
 }
